@@ -7,7 +7,7 @@ A simple web app built using HTML, CSS, and JavaScript.
 - API integration
 - Interactive functionality
 
-## 🛠 Tech Stack
+## 🛠 Tech Stac
 - HTML
 - CSS
 - JavaScript
