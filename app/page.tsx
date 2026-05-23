@@ -9,12 +9,13 @@ import Testimonials from '@/components/Testimonials';
 import EnquiryForm from '@/components/EnquiryForm';
 import Footer from '@/components/Footer';
 import ChatBot from '@/components/ChatBot';
+import MobileCTA from '@/components/MobileCTA';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pb-20 md:pb-0">
         <Hero />
         <Stats />
         <About />
@@ -26,6 +27,7 @@ export default function Home() {
       </main>
       <Footer />
       <ChatBot />
+      <MobileCTA />
     </>
   );
 }

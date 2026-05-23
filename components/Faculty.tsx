@@ -2,7 +2,7 @@ const tags = ['All Subjects', 'Board Prep', 'Personalized Teaching', 'Doubt Clea
 
 export default function Faculty() {
   return (
-    <section id="faculty" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#f1f5f9' }}>
+    <section id="faculty" className="py-16 sm:py-24 relative overflow-hidden" style={{ backgroundColor: '#f1f5f9' }}>
       {/* Cross-grid texture */}
       <div className="absolute inset-0 bg-cross-grid pointer-events-none" />
 
@@ -22,7 +22,7 @@ export default function Faculty() {
           <div className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-5">
             Our Faculty
           </div>
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
             Meet the{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
               Expert Behind SHIV CLASSES

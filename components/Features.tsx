@@ -39,7 +39,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#f8fafc' }}>
+    <section id="features" className="py-16 sm:py-24 relative overflow-hidden" style={{ backgroundColor: '#f8fafc' }}>
       {/* Cross-grid texture */}
       <div className="absolute inset-0 bg-cross-grid pointer-events-none" />
 
@@ -58,7 +58,7 @@ export default function Features() {
           <div className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-5">
             Why Choose Us
           </div>
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
             What Makes SHIV CLASSES{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">Different</span>
           </h2>
@@ -68,11 +68,11 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {features.map((f) => (
             <div
               key={f.title}
-              className="group bg-white p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-blue-100/40 hover:-translate-y-1 transition-all duration-300 cursor-default"
+              className="group bg-white p-5 sm:p-7 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-blue-100/40 hover:-translate-y-1 transition-all duration-300 cursor-default"
             >
               <div className={`w-12 h-12 ${f.iconBg} rounded-2xl flex items-center justify-center text-2xl mb-5 transition-colors`}>
                 {f.icon}

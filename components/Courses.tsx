@@ -51,7 +51,7 @@ const courses = [
 
 export default function Courses() {
   return (
-    <section id="courses" className="py-24 bg-white relative overflow-hidden">
+    <section id="courses" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       {/* Dot-grid texture */}
       <div className="absolute inset-0 bg-dot-grid opacity-[0.12] pointer-events-none" />
 
@@ -76,7 +76,7 @@ export default function Courses() {
           <div className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-5">
             Courses &amp; Curriculum
           </div>
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
             Programs for{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">Every Grade</span>
           </h2>
@@ -86,19 +86,19 @@ export default function Courses() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
           {courses.map((c) => (
             <div
               key={c.level}
               className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300"
             >
-              <div className={`bg-gradient-to-br ${c.gradient} p-6 text-white relative overflow-hidden`}>
+              <div className={`bg-gradient-to-br ${c.gradient} p-4 sm:p-6 text-white relative overflow-hidden`}>
                 <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl" />
-                <div className="text-4xl mb-3 relative z-10">{c.icon}</div>
-                <div className="text-xl font-bold relative z-10 tracking-tight">{c.level}</div>
-                <div className="text-white/70 text-sm mt-0.5 relative z-10 font-medium">{c.range}</div>
+                <div className="text-2xl sm:text-4xl mb-2 sm:mb-3 relative z-10">{c.icon}</div>
+                <div className="text-base sm:text-xl font-bold relative z-10 tracking-tight">{c.level}</div>
+                <div className="text-white/70 text-xs sm:text-sm mt-0.5 relative z-10 font-medium">{c.range}</div>
               </div>
-              <div className={`${c.lightBg} p-5`}>
+              <div className={`${c.lightBg} p-3 sm:p-5`}>
                 <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 ${c.badge}`}>
                   {c.highlight}
                 </div>

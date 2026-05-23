@@ -99,7 +99,7 @@ export default function ChatBot() {
       {/* Chat window */}
       {isOpen && (
         <div
-          className="fixed bottom-24 right-4 sm:right-6 z-50 flex flex-col bg-white rounded-3xl shadow-2xl shadow-blue-200/50 border border-slate-100 overflow-hidden"
+          className="fixed bottom-36 md:bottom-24 right-4 sm:right-6 z-50 flex flex-col bg-white rounded-3xl shadow-2xl shadow-blue-200/50 border border-slate-100 overflow-hidden"
           style={{ width: '22rem', maxWidth: 'calc(100vw - 2rem)', maxHeight: '560px' }}
         >
           {/* Header */}
@@ -213,7 +213,7 @@ export default function ChatBot() {
       <button
         onClick={() => setIsOpen((v) => !v)}
         aria-label={isOpen ? 'Close chat' : 'Open AI chat assistant'}
-        className="fixed bottom-5 right-4 sm:right-6 z-50 w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-xl shadow-blue-400/40 flex items-center justify-center hover:scale-110 hover:shadow-blue-400/60 transition-all duration-200"
+        className="fixed bottom-20 md:bottom-5 right-4 sm:right-6 z-50 w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl shadow-xl shadow-blue-400/40 flex items-center justify-center hover:scale-110 hover:shadow-blue-400/60 transition-all duration-200"
       >
         {isOpen ? <CloseIcon /> : <ChatIcon />}
 

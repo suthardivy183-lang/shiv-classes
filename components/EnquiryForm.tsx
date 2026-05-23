@@ -59,7 +59,7 @@ export default function EnquiryForm() {
   return (
     <section
       id="contact"
-      className="py-24 relative overflow-hidden"
+      className="py-16 sm:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 60%, #2563eb 100%)' }}
     >
       {/* Diagonal stripe texture */}
@@ -83,7 +83,7 @@ export default function EnquiryForm() {
             <div className="inline-block px-4 py-1.5 bg-white/10 border border-white/20 text-white rounded-full text-sm font-semibold mb-5">
               Get in Touch
             </div>
-            <h2 className="text-4xl font-extrabold mb-4 tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold mb-4 tracking-tight leading-tight">
               Start Your Child&apos;s{' '}
               <span className="text-amber-300">Journey Today</span>
             </h2>
@@ -142,7 +142,7 @@ export default function EnquiryForm() {
                 <h3 className="text-xl font-bold text-slate-800 mb-1 tracking-tight">Enquiry Form</h3>
                 <p className="text-slate-400 text-sm mb-6">We&apos;ll get back to you within 24 hours.</p>
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Full Name *</label>
                       <input name="name" value={form.name} onChange={handleChange} required placeholder="Enter full name"
@@ -159,7 +159,7 @@ export default function EnquiryForm() {
                     <input name="email" value={form.email} onChange={handleChange} placeholder="your@email.com" type="email"
                       className="w-full px-3.5 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-50 transition-all" />
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs font-semibold text-slate-600 mb-1.5 uppercase tracking-wide">Student&apos;s Class *</label>
                       <select name="studentClass" value={form.studentClass} onChange={handleChange} required

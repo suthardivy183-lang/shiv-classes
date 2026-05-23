@@ -7,7 +7,7 @@ const pillars = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       {/* Dot-grid texture at low opacity */}
       <div className="absolute inset-0 bg-dot-grid opacity-[0.13] pointer-events-none" />
 
@@ -21,7 +21,7 @@ export default function About() {
       <div className="absolute -top-24 -left-24 w-72 h-72 border border-blue-100 rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Image placeholder */}
           <div className="relative">
@@ -52,7 +52,7 @@ export default function About() {
             <div className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-5">
               About Us
             </div>
-            <h2 className="text-4xl font-extrabold text-slate-900 mb-5 leading-tight tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4 sm:mb-5 leading-tight tracking-tight">
               A Tuition Built on{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
                 Trust &amp; Results

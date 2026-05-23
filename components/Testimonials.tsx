@@ -36,13 +36,13 @@ const Star = () => (
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       {/* Dot-grid texture */}
       <div className="absolute inset-0 bg-dot-grid opacity-[0.13] pointer-events-none" />
 
       {/* Giant decorative opening quote — top left */}
       <div
-        className="absolute -top-6 left-2 text-[220px] font-serif leading-none select-none pointer-events-none"
+        className="absolute -top-6 left-2 text-[100px] sm:text-[220px] font-serif leading-none select-none pointer-events-none"
         style={{ color: 'rgba(219,234,254,0.9)', fontFamily: 'Georgia, serif' }}
       >
         &ldquo;
@@ -50,7 +50,7 @@ export default function Testimonials() {
 
       {/* Giant closing quote — bottom right */}
       <div
-        className="absolute -bottom-16 right-2 text-[220px] font-serif leading-none select-none pointer-events-none rotate-180"
+        className="absolute -bottom-16 right-2 text-[100px] sm:text-[220px] font-serif leading-none select-none pointer-events-none rotate-180"
         style={{ color: 'rgba(219,234,254,0.9)', fontFamily: 'Georgia, serif' }}
       >
         &ldquo;
@@ -67,7 +67,7 @@ export default function Testimonials() {
           <div className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-5">
             Testimonials
           </div>
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
             What Parents &amp; Students{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
               Say About Us
